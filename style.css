@@ -22,9 +22,9 @@ body{
     background-color: black;
     display: block;
     position: fixed;
-    bottom: 6px;
-    right: 6px;
-    padding: 1.3em;
+    bottom: 12px;
+    right: 12px;
+    padding: 1.5em;
     border-radius: 100%;
     z-index: 999;
 }
@@ -41,9 +41,9 @@ body{
     overflow: hidden;
     background-color: white;
     position: absolute;
-    line-height: 3em;
+    line-height: 4em;
     font-size: 1.5em;
-    padding: 10px;
+    padding: 0px;
     font-weight: 500;
 }
 .menu_mobile li{
@@ -250,10 +250,17 @@ aside .fab{
     }
     .top-header{
         display: flex;
-        padding: 10px;
+        padding: 20px;
         justify-content: space-between;
         background-color: white;
         width: 100%;
+    }
+    .menu_mobile{
+        padding: 0px 20px;
+    }
+    .fa-linkedin{
+        font-size: 2em;
+        margin: 1em 0
     }
 }
 @media only screen and (min-width: 800px) {
