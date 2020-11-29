@@ -25,6 +25,7 @@ body{
     background-size: cover;
     cursor: url(./assets/icons8-cursor-30.png),auto;
     width: fit-content;
+    min-height: 100vh;
 }
 .grid-container {
     display: flex;
