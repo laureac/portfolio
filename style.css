@@ -57,12 +57,13 @@ body{
 .visible{
     height: fit-content;
     overflow: visible;
+    z-index: 10;
 }
 .inner-wrap{
     background-color: rgb(253, 253, 253);
     background-size: cover;
     cursor: url(./assets/icons8-cursor-30.png),auto;
-    width: fit-content;
+    width: 100%;
     min-height: 100vh;
 }
 .grid-container {
@@ -87,8 +88,6 @@ body{
     .col-6 {width: 50% !important;}
 }
 
-
-
 h1,h2,h3,h4,h5,h6{
     font-family: 'Josefin Sans', sans-serif;
     margin-top: 0;
@@ -106,11 +105,14 @@ h2{
 }
 h3{
     font-size: 7.6em;
+    position: relative;
+    animation: move ease-out 1s;
 }
 h4{
     font-size: 26px;
     letter-spacing: .5em;
-    padding-bottom: 4em;
+    font-weight: 300;
+    font-family: 'Raleway', sans-serif;
 }
 h5{
     font-size: 22px;
@@ -119,10 +121,13 @@ h5{
 }
 h6{
     font-size: 18px;
+    font-weight: 300;
+    font-family: 'Raleway', sans-serif;
 }
 aside.vertical_menu_area {
     width: 312px;
     padding: 87px 80px 80px 84px;
+
 }
 aside.vertical_menu_area.with_scroll {
     overflow: hidden;
@@ -169,6 +174,9 @@ aside .fab{
 .item{
     line-height: 1.7em;
 }
+#work, #personal{
+    padding-bottom: 4em;
+}
 .portfolio{
     height: 20em;
     position: relative;
@@ -211,7 +219,7 @@ aside .fab{
     transform: scale(1.3);
 }
 #contact{
-    padding-top: 110px
+    padding-top: 110px;
 }
 .section-contact{
     display: flex;
@@ -262,9 +270,37 @@ aside .fab{
         font-size: 2em;
         margin: 1em 0
     }
+    .single_project-image{
+        width: 100% !important;
+    }
 }
 @media only screen and (min-width: 800px) {
     .menu_mobile{
         display: none;
     }
+}
+@keyframes move{
+    from {
+        top: -150px;
+        opacity: 0;
+    }
+    to {
+        top: 0px;
+        opacity: 1;
+    }
+}
+
+/* single page project */
+
+.single_project{
+    display: flex;
+    flex-wrap: wrap;
+}
+.single_project-image{
+    width: 50%;
+    height: 30em;
+    object-fit: cover;
+}
+.single_project-text{
+    width: 50%;
 }
