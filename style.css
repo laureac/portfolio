@@ -296,11 +296,14 @@ aside .fab{
     display: flex;
     flex-wrap: wrap;
 }
-.single_project-image{
+.single_project-images{
     width: 50%;
-    height: 30em;
-    object-fit: cover;
+}
+.single_project img{
+    width: 100%;
+    height: auto;
 }
 .single_project-text{
     width: 50%;
+    padding: 0 5em;
 }
